@@ -5,7 +5,7 @@
     --cinzaescuro: #303030;
 }
 
-body,section,article{
+body,section,article,dd,dl,dt{
     margin: 0px;
 }
 .cortexto{
@@ -33,6 +33,7 @@ a{
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    gap: 10rem;
     
 }
 

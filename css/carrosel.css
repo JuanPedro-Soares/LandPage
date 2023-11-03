@@ -36,6 +36,15 @@ right: -3.8125rem;
   right: auto;
   }
 .item{
+  background-color: #FFF;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: .625rem;
+  border: 1.045rem solid transparent;
+  border-radius: .25rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  margin: 0 1.7888rem;
+  margin-bottom: 11.5469rem;
   width: 17.3056rem !important;
 height: 17.8074rem !important;
 
@@ -56,4 +65,5 @@ height: 17.8074rem !important;
 }
 .arrow-left:hover,.arrow-right:hover{
   background-color: rgba(135, 186, 238, 1);
+  transition: 0.5s;
 }

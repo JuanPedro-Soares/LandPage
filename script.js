@@ -48,6 +48,24 @@ controls.forEach(control =>{
         
     })
 })
+function accordeon(){
+    const accordion = document.querySelectorAll('.js-accordion dt');
+    const resposta =document.querySelectorAll('.js-accordion dd');
+  
+    
+    function dartoggle(index){
+     resposta[index].classList.toggle('ativo');
+     accordion[index].classList.toggle('ativado');
+    };
+    
+    accordion.forEach((item , index) =>{
+      item.addEventListener('click',()=>{
+        dartoggle(index)
+      })
+    });
+    
+    }
 
 
+accordeon();
 ativar();
