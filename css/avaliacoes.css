@@ -1,0 +1,52 @@
+.titleavalia{
+    color: var(--cinzaescuro);
+    text-align: left;
+    font-family: Roboto Condensed;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.predep{
+    color: var(--cinzaescuro);
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 170.187%; 
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    margin-right: 6.25rem;
+    margin-top: 10rem
+}
+.comentarios{
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: .625rem;
+    border: 1.045rem solid transparent;
+    border-radius: .25rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    margin: 0 1.7888rem;
+    margin-bottom: 11.5469rem;
+}
+.estrelas{
+width: 15.4375rem;
+height: 1.75rem;
+padding: 0rem 2.3125rem 1.1rem 0rem;
+}
+.comentario{
+    margin-bottom: 15.1875rem;
+}
+.section-bg{
+    padding-top: 10rem;
+    gap: 10rem;
+    width: 100%;
+    background-image: url("/img/image1.png");
+    background-position: center 17rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+} 
+.container-nome{
+    margin-top: 2.3062rem;
+}

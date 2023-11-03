@@ -1,0 +1,41 @@
+:root{
+    --azul:#369FFF;
+    --branco:#FFF;
+    --cinza:#606060;
+    --cinzaescuro: #303030;
+}
+
+body,section,article{
+    margin: 0px;
+}
+.cortexto{
+    color: #404040;
+}
+
+a{
+    text-decoration: none;
+}
+.corazul{
+    color: var(--azul);
+}
+.escopo{
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem 6.25rem .875rem 6.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.escopo2{
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button{
+    background: none;
+}

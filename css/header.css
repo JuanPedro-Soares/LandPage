@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3.75rem;
+}
+.header{
+    padding: 0.5rem 0.8rem;
+    width: 6.6875rem;
+    height: 1.25rem;
+    font-size: 1.049rem;
+    font-weight: 700;
+    letter-spacing: .0839rem;
+}
+
+.botao{
+    display: inline-block;
+    font-family: Roboto;
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    border-radius: .2998rem;
+    align-items: center; 
+}
+

@@ -1,0 +1,59 @@
+.carrosel-container{
+  position: relative;
+  margin: 0 auto;
+  max-width: 67.7rem;
+}
+.avaliacao{
+  margin-left: 1.8825rem;
+  display: flex !important;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  margin: 0;
+}
+.wrapper{
+ overflow-x: auto;
+}
+.arrow-left,.arrow-right{
+position: absolute;
+top: 25%;
+left: 0;
+right: auto;
+cursor: pointer;
+border: none;
+padding: 0.001px;
+border-radius: 10rem;
+}
+.arrow-left img,.arrow-right img{
+width: 3.1251rem;
+height: 3.1888rem;
+}
+.arrow-right{
+left: auto;
+right: -3.8125rem;
+}
+.arrow-left{
+  left: -3.8125rem;
+  right: auto;
+  }
+.item{
+  width: 17.3056rem !important;
+height: 17.8074rem !important;
+
+}
+.current-item{
+  width: 20.0907rem !important;
+  height: 20.6781rem !important;
+  box-shadow:  0 5px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.arrow-left:hover,.arrow-right:hover{
+  background-color: rgba(135, 186, 238, 1);
+}
