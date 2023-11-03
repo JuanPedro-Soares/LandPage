@@ -1,0 +1,23 @@
+.docpost-nome{
+    width: 100px;
+    height: 100px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes{
+    width: 290.831px;
+    align-self: center;
+    margin-right: 11.7px;
+}
+.direitos{
+    color: var(--azul);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
