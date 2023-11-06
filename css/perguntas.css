@@ -58,7 +58,7 @@
       content: '';
       width: 2.0667rem;
       height: 2.0667rem;
-      background: url('/img/setaabrir.svg');
+      background: url('./img/setaabrir.svg');
       margin-left: auto; 
     }
     
