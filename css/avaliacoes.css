@@ -47,13 +47,13 @@ padding: 0rem 2.3125rem 1.1rem 0rem;
 .container-nome{
     margin-top: 2.3062rem;
 }
-.indicadores input[type="radio"] {
+.radios {
     display: none;
     width: 10px;
     height: 10px;
   }
   
-  .indicadores input[type="radio"] + label {
+  .radios + label {
     width: 10px;
     height: 10px;
     padding: 0;
@@ -64,6 +64,6 @@ padding: 0rem 2.3125rem 1.1rem 0rem;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.indicadores input[type="radio"]:checked + label {
+.radios:checked + label {
     background-color: #369FFF;
 }
