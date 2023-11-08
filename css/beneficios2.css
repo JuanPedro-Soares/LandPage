@@ -1,65 +1,63 @@
 .gridbeneficios {
-  display: grid ;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7.5rem;  
-background:rgba(54, 159, 255, 0.2);
-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-border: 1px solid transparent;
-border-radius: 10px;
+  gap: 7.5rem;
+  background: rgba(54, 159, 255, 0.2);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
-.gif{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 2rem;
-margin-bottom: 2rem;
-border-radius: 4rem;
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4rem;
 }
-.gif img{
-  border-radius:  2rem;
+.gif img {
+  border-radius: 2rem;
 }
-.textos{
+.textos {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   width: 29.4375rem;
   height: 10.625rem;
-  padding: 0rem .75rem;
+  padding: 0rem 0.75rem;
   flex-direction: column;
   align-items: center;
   gap: 3.75rem;
 }
 
-
-.indicadores{
+.indicadores {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.75rem;
   margin-top: 5rem;
-
 }
 .textos img {
-  max-height: .625rem;
+  max-height: 0.625rem;
   width: auto;
   display: block;
   margin: 0 auto;
   animation: none;
 }
-.textos{
+.textos {
   display: none;
   box-sizing: border-box;
 }
-.ativo{
+.ativo {
   display: block;
-  animation: show .5s forwards;
-} 
-@keyframes show{
-  from{
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  from {
     opacity: 0;
     transform: translate3d(-30px 0 0);
   }
-  to{
+  to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
