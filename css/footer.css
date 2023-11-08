@@ -1,0 +1,36 @@
+.docpost-nome{
+  display: inline;
+  max-width: 100px;
+  max-height: 100px;
+}
+footer{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  width: 70rem;
+}
+
+.redes{
+  width: 290.831px;
+  align-items: center;
+  align-self: center;
+}
+.direitos{
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--azul);
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.redes img{
+  margin-left: auto;
+  margin-right: auto;
+}
+.borda{
+  margin-top: 3.75rem ;
+  border-top: 1px solid var(--azul);
+}

@@ -1,18 +1,36 @@
-function ativar(){
-const textos = document.querySelectorAll('.textos');
-let currentIndex = 0;
-
-function alternarAtivo() {
-    textos[currentIndex].classList.remove('ativo');
-    currentIndex = (currentIndex + 1);
-    if(currentIndex===3){
-        currentIndex=0;
+function ativar() {
+    let tempo = 0;
+    const textos = document.querySelectorAll('.textos');
+    const radiobutton = document.querySelectorAll('input[type="radio"]');
+    let currentIndex = 0;
+    radiobutton[currentIndex].checked = true;
+  
+    function alternarAtivo() {
+      textos[currentIndex].classList.remove('ativo');
+      radiobutton[currentIndex].checked = false;
+      currentIndex = (currentIndex + 1) % textos.length;
+      radiobutton[currentIndex].checked = true;
+      textos[currentIndex].classList.add('ativo');
     }
-    textos[currentIndex].classList.add('ativo');
-}
 
-setInterval(alternarAtivo, 4000);
-}
+    radiobutton.forEach((radio, index) => {
+      radio.addEventListener('click', () => {
+        if (index !== currentIndex) {
+          textos[currentIndex].classList.remove('ativo');
+          radiobutton[currentIndex].checked = false;
+          currentIndex = index;
+          radiobutton[currentIndex].checked = true;
+          textos[currentIndex].classList.add('ativo');
+          clearInterval(tempo);
+          tempo = setInterval(alternarAtivo, 4000)
+        }
+    });
+    });
+    
+    tempo = setInterval(alternarAtivo, 4000);
+  }
+  
+  ativar();
 const controls = document.querySelectorAll('.control');
 
 let currentIndex = 1;
@@ -65,7 +83,6 @@ function accordeon(){
     });
     
     }
-
-
+    
 accordeon();
 ativar();
