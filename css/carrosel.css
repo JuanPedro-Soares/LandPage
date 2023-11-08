@@ -58,10 +58,10 @@
     display: none;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
+ 
   .wrapper {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
   }
   .arrow-left:hover,.arrow-right:hover{
     background-color: rgba(135, 186, 238, 1);
@@ -74,7 +74,7 @@
   
   .current-item {
     transform: scale(1); 
-  }    /* UTILIZAR SEM O NODE INSTALADO  */
+  }    
   
   
   
