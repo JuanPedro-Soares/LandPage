@@ -51,18 +51,7 @@ dd {
   position: relative;
 }
 
-.pergunta::after {
-  content: "";
-  width: 2.0667rem;
-  height: 2.0667rem;
-  background: url("/img/setaabrir.svg");
-  margin-left: auto;
-}
 
-.ativado::after {
-  transition: 0.1s;
-  transform: rotate(180deg);
-}
 .ativar {
   display: block;
 }
