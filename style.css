@@ -8,3 +8,17 @@
 @import './css/carrosel.css';
 @import './css/perguntas.css';
 @import './css/footer.css';
+
+
+.pergunta::after {
+  content: "";
+  width: 2.0667rem;
+  height: 2.0667rem;
+  background: url("./img/setaabrir.svg");
+  margin-left: auto;
+}
+
+.ativado::after {
+  transition: 0.1s;
+  transform: rotate(180deg);
+}
