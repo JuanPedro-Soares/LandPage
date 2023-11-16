@@ -36,12 +36,16 @@ const controls = document.querySelectorAll('.control');
 let currentIndex = 1;
 const items = document.querySelectorAll('.item');
 const maxitens = items.length;
+const behavior = window.innerWidth <= 720 ? "auto" : "smooth";
 
 controls.forEach(control =>{
+  if(behavior){
+  items[0].classList.add('current-item');
+  }
     control.addEventListener('click',()=>{
         const isLeft = control.classList.contains('arrow-left');
          if(isLeft){
-            currentIndex-= 1
+            currentIndex-= 1;
          }
          else{
             currentIndex+=1
@@ -58,10 +62,11 @@ controls.forEach(control =>{
         items[currentIndex].classList.add('current-item')
 
         items[currentIndex].scrollIntoView({
-            inline:"center",
-            behavior: "smooth",
-            block: 'nearest',
-        })
+          behavior: behavior,
+          block: 'nearest',
+          inline: 'center',
+        });
+      
 
         
     })
@@ -83,6 +88,8 @@ function accordeon(){
     });
     
     }
+
+    
     
 accordeon();
 ativar();

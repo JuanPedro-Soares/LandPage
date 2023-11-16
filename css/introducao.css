@@ -12,7 +12,13 @@
   font-weight: 700;
   line-height: 90%;
 }
-
+.desc{
+  color: var(--cinza);
+  font-family: Roboto;
+  font-size: 1.1075rem;
+  font-weight: 400;
+  line-height: 90%;
+}
 .subtitle {
   color: var(--cinza);
   font-family: "Roboto", sans-serif;
@@ -43,20 +49,34 @@
   margin-top: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .pessoaimg {
-    display: none;
+    position: absolute;
+    z-index: -1;
+    bottom: 350px;
+    max-width: 395px;
+    left: 45px;
+    top: 60px;
+    height: 14.7475rem;
   }
   .content {
-    margin-left: auto;
+    position: relative;
+    padding: .9375rem .8125rem;
+    width: 17.1875rem;
+    margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 3.75rem;
   }
-  .maintitle {
+  .maintitle{
     color: var(--cinzaescuro);
     font-family: Roboto Condensed;
-    font-size: 38.936px;
-    font-style: normal;
+    font-size: 2.4335rem;
     font-weight: 700;
-    line-height: 90%;
+    line-height: 90%; 
+  }
+  .subtitle{
+  font-size: .7974rem;
+  font-weight: 500;
+  line-height: 100%; 
   }
 }

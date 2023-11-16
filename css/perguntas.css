@@ -6,6 +6,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  
 }
 .container-perguntas {
   margin-top: 1.875rem;
@@ -55,7 +56,7 @@ dd {
   content: "";
   width: 2.0667rem;
   height: 2.0667rem;
-  background: url("/img/setaabrir.svg");
+  background: url("../img/setaabrir.svg");
   margin-left: auto;
 }
 

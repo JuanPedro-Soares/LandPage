@@ -62,3 +62,58 @@
     transform: translate3d(0, 0, 0);
   }
 }
+@media(max-width:720px){
+  .flex{
+    flex-wrap: wrap;
+  }
+  .gridbeneficios{
+    grid-template-columns: 1fr;
+    grid-template-rows: 16rem 1fr;
+    gap: 3.75rem;
+    max-width: none;
+    background-color: unset;
+    box-shadow: none;
+    border: none;
+  }
+  .gif{
+    grid-row: 2;
+    width: 13.625rem;
+    height: 27.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: unset;
+    justify-content: unset;
+    margin-top: 0px;
+
+  }
+  .gridbeneficios .section{
+    margin-bottom: 23.28px;
+  }
+  .article-bg{
+    margin-top: 3.75rem;
+    width: 100%;
+    background: rgba(54, 159, 255, 0.10)
+  }
+ .indicadores{
+  margin-top: 2.8144rem;
+ } 
+ .textos .section2{
+  letter-spacing: 1.68px;
+ }
+ .content_beneficios{
+  width: 25.75rem;
+ }
+ .textos{
+  width: 25rem;
+ }
+ .textos .section{
+  text-align: center;
+  letter-spacing: 270%;
+
+ }
+ .textos .section2{
+  text-justify: center;
+
+ }
+ 
+}
