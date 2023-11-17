@@ -40,7 +40,7 @@ padding: 0rem 2.3125rem 1.1rem 0rem;
 }
 .section-bg {
     position: relative;
-    
+    min-width: max-content;
 }
 
 .img_tel {
@@ -48,7 +48,7 @@ padding: 0rem 2.3125rem 1.1rem 0rem;
     min-width: 1275px; /* Defina a largura mínima desejada */
     height: 762px; /* Mantive a altura fixa conforme seu código original */
     position: absolute;
-    background: url("../img/image1.png") white 0.439px -19.04px / 104.279% 117.506% no-repeat;
+    background: url("../img/image1.png") white 0.439px -19.04px /  100% 117.506%  no-repeat;
     background-size: 100% auto;
     z-index: -1;
     box-shadow: 0px -92px 44px 0px #FFF inset;
@@ -76,4 +76,9 @@ padding: 0rem 2.3125rem 1.1rem 0rem;
 
 .radios:checked + label {
     background-color: #369FFF;
+}
+@media (max-width:720px){
+    .section-bg{
+        overflow-x: hidden;
+    }
 }
