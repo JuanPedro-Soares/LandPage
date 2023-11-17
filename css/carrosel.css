@@ -80,10 +80,6 @@
     transform: scale(1); 
   }    
   @media(max-width:720px){
-    .item{
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
     .carrosel-container{
       max-width: 23.125rem;
     }
