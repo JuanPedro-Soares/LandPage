@@ -34,3 +34,14 @@ footer {
   margin-top: 3.75rem;
   border-top: 1px solid var(--azul);
 }
+@media(max-width:720px){
+  footer {
+    width: 420px;
+    padding: 0px 1.875rem 0.875rem 0rem;
+    gap: 1.875rem;
+    
+  }
+  .redes{
+    width: unset;
+  }
+}

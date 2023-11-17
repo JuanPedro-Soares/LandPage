@@ -31,46 +31,34 @@ function ativar() {
   }
   
   ativar();
-const controls = document.querySelectorAll('.control');
+  function carrosel() {
+    const controls = document.querySelectorAll('.control');
+    const items = document.querySelectorAll('.item');
+    const maxItems = items.length;
+    items[0].classList.add('current-item');
+  
 
-let currentIndex = 1;
-const items = document.querySelectorAll('.item');
-const maxitens = items.length;
-const behavior = window.innerWidth <= 720 ? "auto" : "smooth";
-
-controls.forEach(control =>{
-  if(behavior){
-  items[0].classList.add('current-item');
-  }
-    control.addEventListener('click',()=>{
+    let currentIndex = 0;
+  
+    controls.forEach(control => {
+      control.addEventListener('click', () => {
         const isLeft = control.classList.contains('arrow-left');
-         if(isLeft){
-            currentIndex-= 1;
-         }
-         else{
-            currentIndex+=1
-         }
-         if(currentIndex>=maxitens){
-            currentIndex=0;        
-         }
-         if(currentIndex<0){
-            currentIndex= maxitens-1;
-         }
-
-        items.forEach(item => item.classList.remove('current-item'))
-
-        items[currentIndex].classList.add('current-item')
-
+        currentIndex = isLeft ? (currentIndex - 1 + maxItems) % maxItems : (currentIndex + 1) % maxItems;
+  
+        items.forEach(item => item.classList.remove('current-item'));
+        items[currentIndex].classList.add('current-item');
+  
         items[currentIndex].scrollIntoView({
-          behavior: behavior,
+          behavior: 'smooth',
           block: 'nearest',
           inline: 'center',
         });
-      
-
-        
-    })
-})
+      });
+    });
+  }
+  
+  
+  
 function accordeon(){
     const accordion = document.querySelectorAll('.js-accordion dt');
     const resposta =document.querySelectorAll('.js-accordion dd');
@@ -88,8 +76,8 @@ function accordeon(){
     });
     
     }
-
     
     
+document.addEventListener('DOMContentLoaded', carrosel);
 accordeon();
 ativar();

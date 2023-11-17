@@ -23,7 +23,7 @@
   border: 0.0861rem solid var(--azul);
   border-radius: 0 0 0.6889rem 0.6889rem;
   background-color: rgb(241, 232, 232);
-  width: 100%;
+  min-width: 58%;
   box-sizing: border-box;
   max-width: 38.2764rem;
   margin-top: -1rem;
@@ -60,10 +60,26 @@ dd {
   margin-left: auto;
 }
 
-.ativado::after {
-  transition: 0.1s;
-  transform: rotate(180deg);
-}
+
+
 .ativar {
   display: block;
+}
+@media(max-width:720px){
+  .perguntas{
+    font-size: 1.25rem;
+  }
+  .predep{
+    font-size: .875rem;
+    margin-bottom: 2.75rem;
+  }
+  .pergunta{
+    font-size: .7169rem;
+    min-width: 22.7632rem;
+    padding: .4865rem 1.0242rem;;
+  }
+  .resposta{
+    font-size: .7169rem;
+    width: 91%;
+  }
 }
