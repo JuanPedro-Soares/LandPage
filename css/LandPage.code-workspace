@@ -1,10 +1,14 @@
 {
 	"folders": [
 		{
+			"path": "../../animais fantásticos"
+		},
+		{
 			"path": ".."
 		}
 	],
 	"settings": {
-		"liveServer.settings.port": 5501
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "LandPage"
 	}
 }

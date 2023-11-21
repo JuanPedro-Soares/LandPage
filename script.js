@@ -47,7 +47,6 @@ function ativar() {
   
         items.forEach(item => item.classList.remove('current-item'));
         items[currentIndex].classList.add('current-item');
-  
         items[currentIndex].scrollIntoView({
           behavior: 'smooth',
           block: 'nearest',

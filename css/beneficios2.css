@@ -6,6 +6,7 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   border: 1px solid transparent;
   border-radius: 10px;
+  background: rgba(54, 159, 255, 0.2);
 }
 .gif {
   display: flex;
